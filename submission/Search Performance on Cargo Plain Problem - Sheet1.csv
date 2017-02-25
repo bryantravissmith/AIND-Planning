@@ -1,0 +1,19 @@
+Problem,Algorithm,Expansion,Goals,New_Nodes,Time,Optimal
+Problem 1,breadth_first_search,43,56,180,0.0245,TRUE
+Problem 1,depth_first_graph_search,21,22,85,0.0127,FALSE
+Problem 1,uniform_cost_search,55,57,224,0.03617,TRUE
+Problem 1,astar_search with h_1,55,57,224,0.0341,TRUE
+Problem 1,astar_search with h_ignore_preconditions,41,43,170,0.0387,TRUE
+Problem 1,astar_search with h_pg_levelsum,11,13,50,2.326,TRUE
+Problem 2,breadth_first_search,3343,4609,30509,12.76,TRUE
+Problem 2,depth_first_graph_search,624,625,5602,3.5,FALSE
+Problem 2,uniform_cost_search,4840,4842,43918,44.33,TRUE
+Problem 2,astar_search with h_1,4840,4842,43918,42.32,TRUE
+Problem 2,astar_search with h_ignore_preconditions,1504,1506,13800,12.86,TRUE
+Problem 2,astar_search with h_pg_levelsum,85,87,831,280,TRUE
+Problem 3,breadth_first_search,14663,18098,129631,96.69,TRUE
+Problem 3,depth_first_graph_search,408,409,3364,1.73,FALSE
+Problem 3,uniform_cost_search,16963,16965,149136,370.32,TRUE
+Problem 3,astar_search with h_1,16963,16965,149136,381.72,TRUE
+Problem 3,astar_search with h_ignore_preconditions,4723,4725,41835,84,TRUE
+Problem 3,astar_search with h_pg_levelsum,378,380,3461,1767.8,TRUE

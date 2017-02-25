@@ -167,10 +167,12 @@ class AirCargoProblem(Problem):
 
         for e in action.effect_add:
             pos.append(e)
-            neg.remove(e)
+            if e in neg:
+                neg.remove(e)
 
         for e in action.effect_rem:
-            pos.remove(e)
+            if e in pos:
+                pos.remove(e)
             neg.append(e)
 
         new_state = FluentState(pos, neg)
@@ -214,7 +216,10 @@ class AirCargoProblem(Problem):
         executed.
         '''
         # TODO implement (see Russell-Norvig Ed-3 10.2.3  or Russell-Norvig Ed-2 11.2)
-        count = 0
+        kb = PropKB()
+        kb.tell(decode_state(node.state, self.state_map).pos_sentence())
+        overlap_clauses = [clause for clause in kb.clauses if clause in self.goal]
+        count = max(len(self.goal) - len(overlap_clauses), 0)
         return count
 
 

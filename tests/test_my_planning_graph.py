@@ -115,6 +115,7 @@ class TestPlanningGraphMutex(unittest.TestCase):
             "If one parent action can achieve both states, should NOT be inconsistent-support mutex, even if parent actions are themselves mutex")
 
 
+
 class TestPlanningGraphHeuristics(unittest.TestCase):
     def setUp(self):
         self.p = have_cake()
