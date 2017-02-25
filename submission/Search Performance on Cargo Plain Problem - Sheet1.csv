@@ -16,4 +16,4 @@ Problem 3,depth_first_graph_search,408,409,3364,1.73,FALSE
 Problem 3,uniform_cost_search,16963,16965,149136,370.32,TRUE
 Problem 3,astar_search with h_1,16963,16965,149136,381.72,TRUE
 Problem 3,astar_search with h_ignore_preconditions,4723,4725,41835,84,TRUE
-Problem 3,astar_search with h_pg_levelsum,378,380,3461,1767.8,TRUE
+Problem 3,astar_search with h_pg_levelsum,378,380,3461,1767.8,FALSE

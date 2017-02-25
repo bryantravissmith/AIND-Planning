@@ -1279,5 +1279,67 @@ Unload(C2, P2, SFO)
 
 
 
+bsmith-mbp:AIND-Planning bsmith$ python run_search.py -p 3 -s 8
 
+Solving Air Cargo Problem 3 using astar_search with h_1...
+
+Expansions   Goal Tests   New Nodes
+  16963       16965       149136  
+
+Plan length: 12  Time elapsed in seconds: 381.7224473020178
+Load(C1, P1, SFO)
+Load(C2, P2, JFK)
+Fly(P1, SFO, ATL)
+Load(C3, P1, ATL)
+Fly(P2, JFK, ORD)
+Load(C4, P2, ORD)
+Fly(P1, ATL, JFK)
+Unload(C1, P1, JFK)
+Fly(P2, ORD, SFO)
+Unload(C2, P2, SFO)
+Unload(C3, P1, JFK)
+Unload(C4, P2, SFO)
+
+bsmith-mbp:AIND-Planning bsmith$ python run_search.py -p 3 -s 9
+
+Solving Air Cargo Problem 3 using astar_search with h_ignore_preconditions...
+
+Expansions   Goal Tests   New Nodes
+   4723        4725       41835   
+
+Plan length: 12  Time elapsed in seconds: 84.09201916999882
+Load(C1, P1, SFO)
+Fly(P1, SFO, ATL)
+Load(C3, P1, ATL)
+Fly(P1, ATL, JFK)
+Unload(C1, P1, JFK)
+Unload(C3, P1, JFK)
+Load(C2, P2, JFK)
+Fly(P2, JFK, ORD)
+Load(C4, P2, ORD)
+Fly(P2, ORD, SFO)
+Unload(C2, P2, SFO)
+Unload(C4, P2, SFO)
+
+bsmith-mbp:AIND-Planning bsmith$ python run_search.py -p 3 -s 10
+
+Solving Air Cargo Problem 3 using astar_search with h_pg_levelsum...
+
+Expansions   Goal Tests   New Nodes
+   378         380         3461   
+
+Plan length: 13  Time elapsed in seconds: 1767.804139585991
+Load(C1, P1, SFO)
+Fly(P1, SFO, ATL)
+Load(C3, P1, ATL)
+Fly(P1, ATL, JFK)
+Load(C2, P2, JFK)
+Fly(P2, JFK, SFO)
+Unload(C1, P1, JFK)
+Unload(C2, P2, SFO)
+Unload(C3, P1, JFK)
+Fly(P2, SFO, ORD)
+Load(C4, P2, ORD)
+Fly(P2, ORD, SFO)
+Unload(C4, P2, SFO)
 
